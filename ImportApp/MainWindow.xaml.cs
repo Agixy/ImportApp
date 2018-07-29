@@ -10,14 +10,13 @@ namespace ImportApp
     public partial class MainWindow : Window
     {
         private readonly ImportInitializer importInitializer = new ImportInitializer();
-        private readonly ServiceSender serviceSender = new ServiceSender();
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, RoutedEventArgs e)
+        private void ImportButton_Click(object sender, RoutedEventArgs e)
         {
             var path = ChooseFile();
             try
@@ -40,8 +39,7 @@ namespace ImportApp
             }
             return path;
         }
-
-        
+       
     }
 }
 

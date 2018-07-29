@@ -28,7 +28,6 @@ namespace ImportApp
             var records = recordBuilder.ImportRecords(path);   
 
             recordBuilder.SaveRecordsToDatabase(records);
-
             serviceSender.Send(records);
         }     
     }

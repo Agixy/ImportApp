@@ -5,12 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ImportApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Name="Button1" Content="Button" HorizontalAlignment="Left" Margin="73,63,0,0" VerticalAlignment="Top" Width="166" Height="88" Click="Button1_Click"/>
-        <Button Name="SendServiceButton" Content="Send To Service" HorizontalAlignment="Left" Margin="56,247,0,0" VerticalAlignment="Top" Width="183" Height="76"/>
-        <ListBox Name="ExceptionBox"  HorizontalAlignment="Left" Height="187" Margin="485,102,0,0" VerticalAlignment="Top" Width="189"/>
-        <Label Content="Błędy" HorizontalAlignment="Left" Margin="485,76,0,0" VerticalAlignment="Top"/>
+        Title="MainWindow" Height="311.538" Width="572.337">
+    <Grid Margin="0,0,2,3">
+        <Button Name="ImportButton" Content="Import" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Width="166" Height="88" Click="ImportButton_Click" FontSize="16"/>
 
     </Grid>
 </Window>

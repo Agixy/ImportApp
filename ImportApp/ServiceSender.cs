@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using ImportApp.Builders;
 using ImportApp.ImportService;
 using ImportApp.Model;
@@ -22,9 +23,8 @@ namespace ImportApp
             {
                 var person = personMapper.MapToServiceObj(record.Person, record.FinancialState);
 
-                //importService.DoImport(person);
+                importService.DoImport(person);
             }
-
         }
     }
 }
